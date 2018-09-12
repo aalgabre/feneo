@@ -19,10 +19,16 @@
     ],
     "paths": {
       "@feneo": [
-        "dist/lib-feneo"
+        "projects/lib-feneo/src/public_api"
       ],
       "@feneo/*": [
-        "dist/lib-feneo/*"
+        "projects/lib-feneo/src/public_api"
+      ],
+      "@feneo/test": [
+        "dist/feneo/test"
+      ],
+      "@feneo/test/*": [
+        "dist/feneo/test/*"
       ]
     }
   }
