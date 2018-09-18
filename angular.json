@@ -123,33 +123,33 @@
         }
       }
     },
-    "lib-feneo": {
-      "root": "projects/lib-feneo",
-      "sourceRoot": "projects/lib-feneo/src",
+    "lib-feneo-core": {
+      "root": "projects/lib-feneo-core",
+      "sourceRoot": "projects/lib-feneo-core/src",
       "projectType": "library",
       "prefix": "fen",
       "targets": {
         "build": {
           "builder": "@angular-devkit/build-ng-packagr:build",
           "options": {
-            "tsConfig": "projects/lib-feneo/tsconfig.lib.json",
-            "project": "projects/lib-feneo/ng-package.json"
+            "tsConfig": "projects/lib-feneo-core/tsconfig.lib.json",
+            "project": "projects/lib-feneo-core/ng-package.json"
           }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/lib-feneo/src/test.ts",
-            "tsConfig": "projects/lib-feneo/tsconfig.spec.json",
-            "karmaConfig": "projects/lib-feneo/karma.conf.js"
+            "main": "projects/lib-feneo-core/src/test.ts",
+            "tsConfig": "projects/lib-feneo-core/tsconfig.spec.json",
+            "karmaConfig": "projects/lib-feneo-core/karma.conf.js"
           }
         },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "projects/lib-feneo/tsconfig.lib.json",
-              "projects/lib-feneo/tsconfig.spec.json"
+              "projects/lib-feneo-core/tsconfig.lib.json",
+              "projects/lib-feneo-core/tsconfig.spec.json"
             ],
             "exclude": [
               "**/node_modules/**"
